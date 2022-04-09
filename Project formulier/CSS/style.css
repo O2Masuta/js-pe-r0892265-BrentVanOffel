@@ -1,0 +1,67 @@
+/* @import url(<link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #36dea3, #9b59b6);
+}
+
+.container {
+    max-width: auto;
+    width: auto;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.container form .gebruikers-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px 0 12px 0;
+}
+
+form .gebruikers-info .textbox {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.gebruikers-info .textbox .info {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.gebruikers-info .textbox input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.gebruikers-info .textbox input:focus,
+.gebruikers-info .textbox input:valid {
+    border-color: #36dea3;
+}
+
+.submit {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}

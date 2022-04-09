@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+
+    <title>Project</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="titel">
+            <h2>Registreer</h2>
+            <h4>Meld je aan bij Van Offel Services, wij beschermen jouw hardware tegen malware!</h4>
+            <!-- onsubmit="return validateForm()" name="Forms" bij input voornaam name="Fnaam"  -->
+            <div class="row">
+                <div class="col-md-7">
+                    <form class="form" id="form">
+
+                        <div class="gebruikers-info">
+                            <div class="textbox">
+                                <span class="info">Voornaam</span>
+                                <input type="text" placeholder="Uw Voornaam" id="voornaam">
+
+                            </div>
+                            <div class="textbox">
+                                <span class="info">Naam</span>
+                                <input type="text" placeholder="Uw Naam" id="naam">
+                            </div>
+                            <div class="textbox">
+                                <span class="info">Gebruikersnaam</span>
+
+                                <input type="text" placeholder="Uw Gebruikersnaam" id="gebruikersnaam">
+                            </div>
+                            <div class="textbox">
+                                <span class="info">Email</span>
+                                <input type="text" id="email" placeholder="Uw Email">
+                            </div>
+                            <div class="textbox">
+                                <label for="inputWachtwoord" class="col-sm-2 col-form-label">Wachtwoord</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="info" id="inputWachtwoord" placeholder="Uw wachtwoord">
+                                </div>
+                                <span>Uw wachtwoord moet minstens 8 tekens lang zijn!</span>
+                            </div>
+                            <div class="textbox">
+                                <label for="inputWachtwoord" class="col-sm-2 col-form-label">Wachtwoord</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="info" id="inputWachtwoord2" placeholder="Herhaal uw wachtwoord">
+                                </div>
+                            </div>
+                            <div class="textbox">
+                                <span class="info">Adres</span>
+                                <input type="text" placeholder="Uw Adres" id="adres">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="land" id="land">
+                                    <span class="land">Land</span>
+                                    <select class="land-select" id="lSelect">
+                                        <option disabled="disabled" selected>Kies een land</option>
+                                    <option value="1">België</option>
+                                    <option value="2">Nederland</option>
+                                    <option value="3">Engeland</option>
+                                    <option value="4">Italië</option>
+                                    <option value="5">Spanje</option>
+                                    <option value="6">Frankrijk</option>
+                                    <option value="7">Duitsland</option>
+                                    <option value="8">Polen</option>
+                                    <option value="9">Hongarije</option>
+                                    <option value="10">Turkije</option>
+                                  </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="provincie" id="provincie">
+                                    <span class="provincie">Provincie</span>
+                                    <select class="provincie-select" id="prSelect">
+                                        <option disabled="disabled" selected>Kies een provincie</option>
+                                    <option value="1">Antwerpen</option>
+                                    <option value="2">Oost-Vlaanderen</option>
+                                    <option value="3">West-Vlaanderen</option>
+                                    <option value="4">Vlaams-Brabant</option>
+                                    <option value="5">Limburg</option>
+                                    <option value="6">Waals-Brabant</option>
+                                    <option value="7">Henegouwen</option>
+                                    <option value="8">Luik</option>
+                                    <option value="9">Luxemburg</option>
+                                    <option value="10">Namen</option>
+                                  </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="textbox">
+                                    <span class="info">Postcode</span>
+                                    <input type="text" id="postcode" placeholder="Uw Postcode">
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col">
+                                <div class="Algemene-voorwaarden">
+                                    <span> <h3 class="algemene-vw-titel">Hou me op de hoogte</h3></span>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label ">
+                                             Inschrijven voor onze nieuwsbrief
+                                            </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" id="voorwaarden" type="checkbox">
+                                        <label class="form-check-label">
+                                            Ik ga akkoord met de algemene voorwaarden
+                                            </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="betaling">
+                                    <span> <h3 class="algemene-vw-titel">Betaling</h3></span>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                             Banking app
+                                            </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                              Overschrijving
+                                            </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                        <label class="form-check-label" for="flexRadioDefault3">
+                                             Visa card
+                                            </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                                        <label class="form-check-label" for="flexRadioDefault4">
+                                              Paypal
+                                            </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="button">
+                            <!-- <button type="button" class="btn btn-outline-primary"></button> -->
+                            <input type="submit" class="btn btn-outline-primary" value="Wave your magic wand" id="btnSubmit" name="btnSubmit" onclick="validateForm()">
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="col-md-5">
+                    <div class="meldingen">
+
+                        <div class="alert alert-success" id="succesAlert" role="alert">
+                            <h4>Goed gedaan!</h4>
+                            <span>Aww yeah, je werd geregistreerd.</span>
+                        </div>
+
+                        <div class="alert alert-danger" id="showErrors" role="alert">
+                            <h4>Yikes, errors...</h4>
+                        </div>
+                        <div class="alert alert-primary" id="betaling" role="alert">
+                            <!-- de titel van deze alert werkt om de 1 of andere reden niet! -->
+                            <h4>Betalingswijze</h4>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <script src="Script/script_project.js"></script>
+</body>
+
+</html>
